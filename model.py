@@ -15,5 +15,5 @@ def generateAI():
 
     y_ai=ai.predict(X_test)
     accuracy_score(y_test,y_ai)
-    pickle.dump(ai,open('ai.pkl'))
+    pickle.dump(ai,open('ai.pkl','wb'))
     print("model is created")
